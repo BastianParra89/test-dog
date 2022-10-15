@@ -1,0 +1,160 @@
+/**
+* You can edit this whole file.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: 0.25rem;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  width: 100%;
+  align-items: center;
+
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  
+}
+
+.nav__logo a {
+  font-weight: var(--font-weight-heavy);
+  color: var(--gray-4);
+  text-decoration: none;
+ 
+}
+
+.nav__logo img {
+  margin-right: var(--spacer-3);
+  margin-left: var(--spacer-3);
+}
+
+.nav__menu {
+  font-weight: var(--font-weight-heavy);
+  color: var(--gray-4);
+ 
+  
+}
+
+.nav__menu ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__menu a {
+  font-weight: var(--font-weight-heavy);
+  color: var(--gray-4);
+  
+  margin-right: var(--spacer-3);
+  
+ 
+}
+
+.nav__menu ul  li a:after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: var(--gray-4);
+  bottom: 0;
+  position: absolute;
+  transition: all .5s;
+  will-change: width;
+
+}
+
+.title__cards {
+  margin: var(--spacer-5);
+
+
+}
+
+.card__container {
+  padding: var(--spacer-4);
+  margin: var(--spacer-5);
+  border: var(--gray-2) solid 1px;
+  box-shadow: var(--shadows);
+}
+
+.button__cards {
+  background-color: var(--primary);
+  width: 100%;
+  margin: var(--spacer-2);
+  font-size: var(--font-size-3);
+  color: var(--gray-4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+  
+}
+
+.button__icon {
+  margin-right: var(--spacer-2);
+  font-size: var(--font-size-3);
+  height: 1rem;
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+.cards__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__container {
+ 
+  flex-basis: 90em;
+
+}
+
+.button__cards {
+  display: flex;
+  
+}
+
+}
